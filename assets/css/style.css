@@ -2,14 +2,6 @@
   #main.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -84,7 +76,23 @@
 }
 
 
+.user-pic{
+  width: 500px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 14%;
+  transform: translate(-50%, -50%);
+  padding: 8px;
+  background: linear-gradient(135deg, red, blue 50%, white 50%);
+  background-size: 250%;
+  background-position: 100% 100%;
+  transition: background 0.5s;    
+}
 
+.user-pic:hover{
+  background-position: 0% 0%;
+}
 
 
 /*-----------------------------------*\
@@ -368,11 +376,14 @@ body.nav-active { overflow: hidden; }
 
 .hero .container {
   display: grid;
-  gap: 50px;
+  gap: 350px;
 }
 
 .hero-banner {
+  display: flex;
   position: relative;
+  right: 240px;
+  bottom: 190px;
   max-width: max-content;
   margin-inline: auto;
 }
